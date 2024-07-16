@@ -11,7 +11,7 @@ app.get("/", (req: express.Request, res: express.Response) => {
   res.send({
     statusCode: 200,
     success: true,
-    message: "microservice-template-nodejs-js",
+    message: "microservice-template-nodejs-ts",
     data: "A backend template made using Node.js, Express.js, and JavaScript for building REST API based microservices.",
   });
 });
