@@ -4,6 +4,8 @@
   "description": "A backend template made using Node.js, Express.js, and TypeScript for building REST API based microservices.",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
