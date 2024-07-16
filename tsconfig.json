@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Adjust target based on your project requirements
+    "module": "commonjs", // Adjust module type based on your project needs
+    "strict": true, // Enables stricter type checking
+    "esModuleInterop": true, // Enables interoperability with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allows synthetic default imports
+    "outDir": "dist", // Output directory for compiled JavaScript files (optional)
+    "sourceMap": true, // Generate source maps for debugging (optional)
+    "lib": ["dom", "dom.iterable", "esnext"], // Specify library files to include
+    "allowJs": true, // Allow importing JavaScript files (optional)
+  },
+  "include": ["src"] // Include source files from the src directory
+}
