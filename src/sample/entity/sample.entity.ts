@@ -1,7 +1,7 @@
 export default class Sample {
-  sampleBoolean: boolean;
-  sampleNumber: number;
-  sampleString: string;
+  sampleBoolean?: boolean;
+  sampleNumber?: number;
+  sampleString?: string;
 
   constructor(
     sampleBoolean: boolean,
