@@ -1,15 +1,5 @@
-export default class Sample {
-  sampleBoolean?: boolean;
+export default interface Sample {
   sampleNumber?: number;
+  sampleBoolean?: boolean;
   sampleString?: string;
-
-  constructor(
-    sampleBoolean: boolean,
-    sampleNumber: number,
-    sampleString: string,
-  ) {
-    this.sampleBoolean = sampleBoolean;
-    this.sampleNumber = sampleNumber;
-    this.sampleString = sampleString;
-  }
 }
