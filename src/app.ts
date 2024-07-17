@@ -1,5 +1,6 @@
 import express from "express";
 import createHttpError from "http-errors";
+import ApiResponse from "./common/ApiResponse";
 
 const app: express.Application = express();
 
@@ -8,12 +9,15 @@ app.use(express.urlencoded({ extended: true }));
 
 //* GET / Introduction
 app.get("/", (req: express.Request, res: express.Response) => {
-  res.send({
-    statusCode: 200,
-    success: true,
-    message: "microservice-template-nodejs-ts",
-    data: "A backend template made using Node.js, Express.js, and JavaScript for building REST API based microservices.",
-  });
+  res.send(
+    new ApiResponse({
+      statusCode: 200,
+      success: true,
+      message: "microservice-template-nodejs-ts",
+      data: "A backend template made using Node.js, Express.js, and JavaScript for building REST API based microservices.",
+      errors: [],
+    })
+  );
 });
 
 // 404 handler
