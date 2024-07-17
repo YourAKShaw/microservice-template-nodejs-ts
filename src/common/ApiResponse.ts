@@ -2,8 +2,8 @@ export default class ApiResponse {
   statusCode: number;
   success: boolean;
   message: string;
-  data: any;
-  errors: [];
+  data: unknown;
+  errors: unknown;
 
   constructor({
     statusCode,
@@ -15,8 +15,8 @@ export default class ApiResponse {
     statusCode: number;
     success: boolean;
     message: string;
-    data: any;
-    errors: [];
+    data: unknown;
+    errors: unknown;
   }) {
     this.statusCode = statusCode || 500;
     this.success = success || false;
